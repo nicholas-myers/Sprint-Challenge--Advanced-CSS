@@ -12,12 +12,15 @@
   position: fixed;
   top: 0;
   z-index: 1;
+  border-bottom: 1px solid black !important;
+  @media @phone {
+    // border-bottom: none !important;
+  }
 
   nav {
     width: 30%;
     .flex();
     flex-wrap: wrap;
-
     @media @phone {
       width: 90%;
     }
