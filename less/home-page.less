@@ -6,10 +6,7 @@
   }
 
   .intro {
-    
-    img {
-      width: 100%;
-      border-radius: 5px;
+    div{
       @media @phone {
         position: absolute;
         left:0;
@@ -17,10 +14,18 @@
         z-index: 0;
       }
     }
+    img {
+      width: 100%;
+      border-radius: 5px;
+      
+    }
 
     h2 {
       padding: 15px;
       .headerFonts();
+      @media @phone {
+        padding-top: 150px;
+      }
     }
 
     p {
