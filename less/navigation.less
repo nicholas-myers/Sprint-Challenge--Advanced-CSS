@@ -9,15 +9,13 @@
     border: 1px solid @nav-border !important;
     background-color: @nav-bg;
 
-    @media @phone {
-     width: ;   
-    }
-
     nav {
         width:30%;
         .flex();
         flex-wrap: wrap;
-        
+        @media @phone {
+            width: 90%;   
+           }
 
         h1 {
             width: 100%;

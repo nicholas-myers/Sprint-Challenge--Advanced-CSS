@@ -170,11 +170,6 @@ p {
   border: 1px solid #F1F1F1 !important;
   background-color: #F6F6F6;
 }
-@media (max-width: 500px) {
-  .navContainer {
-    width: ;
-  }
-}
 .navContainer nav {
   width: 30%;
   display: flex;
@@ -182,6 +177,11 @@ p {
   align-items: center;
   flex-direction: none;
   flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .navContainer nav {
+    width: 90%;
+  }
 }
 .navContainer nav h1 {
   width: 100%;
