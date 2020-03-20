@@ -14,10 +14,13 @@
   border-radius: 10px;
   background-color: @bgColor;
   color: @fontColor;
+  transition: 1s;
   &:hover {
     background-color: @fontColor;
     color: @bgColor;
-    border: 1px solid @main-border-color !important;
+    border: 1px solid @bgColor !important;
+    padding: 4% 10%;
+    transition: 1s;
   }
 }
 
@@ -28,3 +31,4 @@
 .mainFonts() {
   color: @main-font-color;
 }
+

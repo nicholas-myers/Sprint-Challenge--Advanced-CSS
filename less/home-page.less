@@ -6,6 +6,7 @@
   }
 
   .intro {
+    
     img {
       width: 100%;
       border-radius: 5px;
@@ -24,6 +25,13 @@
     p {
       padding: 0 15px;
       .headerFonts();
+      &:hover {
+        background-color: @nav-font;
+        border-radius: 5px;
+        color: @nav-bg;
+        padding: 1% 3%;
+        transition: 1s;
+      }
     }
   }
 
