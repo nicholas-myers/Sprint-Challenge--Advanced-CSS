@@ -224,6 +224,13 @@ footer {
   width: 100%;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
   color: #23293B;
