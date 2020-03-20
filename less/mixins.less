@@ -7,13 +7,13 @@
     flex-direction: @direction;
 }
 
-.buttons() {
-    padding: 2% 5%;
-    font-size: 2rem;
+.buttons(@padding: 2% 5%, @size: 2rem, @bgColor: @button-bg-color, @fontColor: @button-font-color) {
+    padding: @padding;
+    font-size: @size;
     border: none;
     border-radius: 10px;
-    background-color: @button-bg-color;
-    color: @button-font-color;
+    background-color: @bgColor;
+    color: @fontColor;
 }
 
 .headerFonts() {
