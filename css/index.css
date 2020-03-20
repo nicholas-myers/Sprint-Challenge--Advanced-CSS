@@ -169,6 +169,7 @@ p {
   flex-direction: none;
   border: 1px solid #F1F1F1 !important;
   background-color: #F6F6F6;
+  opacity: 70%;
 }
 .navContainer nav {
   width: 30%;
