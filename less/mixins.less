@@ -1,1 +1,34 @@
 // Mixins Here
+
+.flex(@justify: center, @align: center, @direction: none) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-direction: @direction;
+}
+
+.buttons(@padding: 2% 5%, @size: 2rem, @bgColor: @button-bg-color, @fontColor: @button-font-color) {
+  padding: @padding;
+  font-size: @size;
+  border: none;
+  border-radius: 10px;
+  background-color: @bgColor;
+  color: @fontColor;
+  transition: 1s;
+  &:hover {
+    background-color: @fontColor;
+    color: @bgColor;
+    border: 1px solid @bgColor !important;
+    padding: 4% 10%;
+    transition: 1s;
+  }
+}
+
+.headerFonts() {
+  color: @header-font-color;
+}
+
+.mainFonts() {
+  color: @main-font-color;
+}
+
