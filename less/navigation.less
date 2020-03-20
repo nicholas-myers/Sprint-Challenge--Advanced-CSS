@@ -1,1 +1,41 @@
 // Navigation code here
+* {
+    border: 1px solid black !important;
+}
+
+.navContainer {
+    width: 100%;
+    .flex();
+    
+    background-color: @wild-sand;
+
+    nav {
+        width:30%;
+        .flex();
+        flex-wrap: wrap;
+        
+
+        h1 {
+            width: 100%;
+            font-size: 5rem;
+            text-align: center;
+            padding: 1%;
+        }//closes h1
+
+        .links {
+            width: 100%;
+            .flex(space-between);
+            font-size: 2rem;
+
+            a {
+                text-decoration: none;
+                text-align: center;
+                padding: 1%;
+                display: inline;
+            }
+
+            
+        }//closes links
+    }//closes nav
+}//closes container
+
