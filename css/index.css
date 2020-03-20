@@ -233,17 +233,17 @@ footer {
     width: 90%;
   }
 }
+.home .intro img {
+  width: 100%;
+  border-radius: 5px;
+}
 @media (max-width: 500px) {
-  .home .intro div {
-    position: absolute;
+  .home .intro img {
+    position: fixed;
     left: 0;
     width: 100%;
     z-index: 0;
   }
-}
-.home .intro img {
-  width: 100%;
-  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
