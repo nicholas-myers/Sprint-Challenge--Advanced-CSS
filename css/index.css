@@ -270,6 +270,11 @@ footer {
   background-color: #23293B;
   color: #F6F7F8;
 }
+.home .walk .walk-text button:hover {
+  background-color: #F6F7F8;
+  color: #23293B;
+  border: 1px solid #dee2e6 !important;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;

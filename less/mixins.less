@@ -1,26 +1,30 @@
 // Mixins Here
 
 .flex(@justify: center, @align: center, @direction: none) {
-    display: flex;
-    justify-content: @justify;
-    align-items: @align;
-    flex-direction: @direction;
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-direction: @direction;
 }
 
 .buttons(@padding: 2% 5%, @size: 2rem, @bgColor: @button-bg-color, @fontColor: @button-font-color) {
-    padding: @padding;
-    font-size: @size;
-    border: none;
-    border-radius: 10px;
-    background-color: @bgColor;
-    color: @fontColor;
+  padding: @padding;
+  font-size: @size;
+  border: none;
+  border-radius: 10px;
+  background-color: @bgColor;
+  color: @fontColor;
+  &:hover {
+    background-color: @fontColor;
+    color: @bgColor;
+    border: 1px solid @main-border-color !important;
+  }
 }
 
 .headerFonts() {
-    color: @header-font-color;
+  color: @header-font-color;
 }
 
 .mainFonts() {
-    color: @main-font-color;
+  color: @main-font-color;
 }
-

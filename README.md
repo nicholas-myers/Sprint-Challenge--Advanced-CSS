@@ -34,13 +34,20 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+an adaptive site checks to see what the view port size is when it initially loads then loads the layout for that viewport, a responsive site changes as the view port size changes and is constantly checking based on @media queries ie is scalable.
+
 2. Describe what it means to be mobile first vs desktop first.
 
+mobile first uses min-width media queries and starts with the layout for phone users then scaling up,
+a desktop first starts with full page layouts that scale down. Using max-width media queries.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+it sets the default from 16px down to 10px, a rem is 1rem = 10px, so if you want 20px then its 2rem, its multiplicative of what you set the base html font size to. This allows for users to have control over font size in their browser settings.
 
 4. How would you describe preprocessing to someone new to CSS?
+a preprocessor allows you to write the syntax for the code in a much more organized way using nesting, mixins and variables, the preprocessor then takes that code and compiles it all into your normal css, converting all the syntax back into standard css syntax and layout. keeping the files seperate but still applying all the syling onto your site.
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? All of it, if I had to choose one though, it would be Mixins. I understand it pretty well, but probably remembering to apply the variables correctly.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -108,13 +115,13 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [x]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [x] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
 * [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
